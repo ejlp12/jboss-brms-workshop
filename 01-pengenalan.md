@@ -35,9 +35,9 @@ promosi diskon ini akan berubah-ubah besarannya atau aturannya (rule).
 
 Anda tidak perlu punya kemampuan untuk programming web, tidak perlu menguasai HTML, CSS, JavaScript maupun Java, karena bagian
 web user interface (UI) sudah dibuat dan komponen UI sudah dibuat agar dapat memanggil JBoss BRMS untuk mengeksekusi aturan 
-promosi diskon.
+perhitungan harga pengiriman barang dan promosi atau diskon.
 
-Yang akan anda buat adalah membuat aturan proposi diskon di JBoss BRMS.
+Yang akan anda buat adalah membuat business rule dari harga pengiriman barang dan promosi diskon di JBoss BRMS.
 
 Bagaimana aturan yang akan dibuat?
 ----------------------------------
@@ -60,6 +60,7 @@ No.  | Deskripsi        | Total        | Total       | Biaya
 
 
 Supaya menarik pembeli agar membeli lebih banyak item, maka saat ini RodHot akan memberikan potongan untuk biaya pengiriman barang jika total pembelian sama dengan atau lebih besar dari $75 maka biaya pengirimannya __gratis__. Jadi pembelian diatas $75, biaya pengirimannya bukan lagi $8.99 atau $10.99 seperti terlihat pada tabel diatas.
+
 
 
 
