@@ -9,15 +9,15 @@ Sebaiknya anda browsing dan baca-baca dulu, dan atau melihat file presentasi ber
 
 Pada workshop ini kita akan menggunakan produk __Red Hat JBoss BRMS__ versi 6.0 dengan materi sebagai berikut: 
 
- 1. The introduction and installation of JBoss BRMS 
- 2. Creating a new project
- 3. Creating a domain model
- 4. Creating a Domain Specific Language (DSL)
- 5. Creating Guided Rules
- 6. Creating Technical Rules (DRL)
- 7. Creating Guided Decision Tables
- 8. Create RuleFlow Process
- 9. Create Test Scenarios
+1. The introduction and installation of JBoss BRMS 
+2. Creating a new project
+3. Creating a domain model
+4. Creating a Domain Specific Language (DSL)
+5. Creating Guided Rules
+6. Creating Technical Rules (DRL)
+7. Creating Guided Decision Tables
+8. Create RuleFlow Process
+9. Create Test Scenarios
 10. Running the Cool Store
 
 Apa yang akan dibuat?
@@ -41,6 +41,30 @@ Yang akan anda buat adalah membuat aturan proposi diskon di JBoss BRMS.
 
 Bagaimana aturan yang akan dibuat?
 ----------------------------------
+Begini..
+Karena setiap pembelian barang, barang akan dikirim lewat perusahaan shipping (3rd party) maka setiap barang yang dibeli
+ada biaya pengiriman barang. Semakin banyak atau mahal barang yang dibeli maka biaya pengiriman semakin besar.
+
+Aturannya standarnya adalah seperti ini, jika jumlah pembelian barang antara  0 atau lebih kecil dari $25 maka biaya 
+pengiriman adalah $2.99. Jika pembelian antara $25 atau lebih kecil dari $50 maka biaya pengiriman adalah $4.99.
+Dan seterusnya seperti tertera pada tabel berikut:
+
+No.  | Deskripsi        | Total        | Total       | Biaya 
+     |                  | pembelian >= | pembelian < | Pengiriman 
+=====|==================|==============|=============|============
+1    | Shipping Tier 1  |            0 |         25  |   2.99
+2    | Shipping Tier 2  |           25 |         50  |   4.99
+3    | Shipping Tier 3  |           50 |         75  |   6.99
+4    | Shipping Tier 4  |           75 |        100  |   8.99
+5    | Shipping Tier 5  |          100 |    1000000  |  10.99
+
+
+Supaya menarik pembeli agar membeli lebih banyak item, maka saat ini RodHot akan memberikan potongan untuk biaya pengiriman barang jika total pembelian sama dengan atau lebih besar dari $75 maka biaya pengirimannya __gratis__. Jadi pembelian diatas $75, biaya pengirimannya bukan lagi $8.99 atau $10.99 seperti terlihat pada tabel diatas.
+
+
+
+
+
 
 
 
