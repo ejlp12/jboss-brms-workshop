@@ -49,6 +49,7 @@ Aturannya standarnya adalah seperti ini, jika jumlah pembelian barang antara  0 
 pengiriman adalah $2.99. Jika pembelian antara $25 atau lebih kecil dari $50 maka biaya pengiriman adalah $4.99.
 Dan seterusnya seperti tertera pada tabel berikut:
 
+```
 No.  | Deskripsi        | Total        | Total       | Biaya 
      |                  | pembelian >= | pembelian < | Pengiriman 
 =====|==================|==============|=============|============
@@ -57,7 +58,7 @@ No.  | Deskripsi        | Total        | Total       | Biaya
 3    | Shipping Tier 3  |           50 |         75  |   6.99
 4    | Shipping Tier 4  |           75 |        100  |   8.99
 5    | Shipping Tier 5  |          100 |    1000000  |  10.99
-
+```
 
 Supaya menarik pembeli agar membeli lebih banyak item, maka saat ini RodHot akan memberikan potongan untuk biaya pengiriman barang jika total pembelian sama dengan atau lebih besar dari $75 maka biaya pengirimannya __gratis__. Jadi pembelian diatas $75, biaya pengirimannya bukan lagi $8.99 atau $10.99 seperti terlihat pada tabel diatas.
 
