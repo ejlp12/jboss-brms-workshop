@@ -8,7 +8,12 @@ Scorecard adalah alat untuk Risk Management yang digunakan untuk menentukan resi
 > A scorecard can be used to predict the likelihood or probability of a certain outcome. 
 > An additive scorecard calculates an overall score by adding all partial scores assigned to individual rule conditions.
 
+[Video contoh pembuatan scorecard di JBoss BRMS/BPMS](https://www.youtube.com/watch?v=xFLlgtBMTDY) dengan menggunakan **Guided Score Card**
 
 
-http://blog.athico.com/2012/10/scorecards-and-pmml41-support-for.html
-http://primatek.ca/2010/08/16/a-quick-introduction-to-scorecards/
+Contoh scorecard 
+
+![](http://3.bp.blogspot.com/-QaeiKQQimVE/UILqNpUD3bI/AAAAAAAAA2c/kMvV47FsMVI/s1600/scorecard_asset_webeditor.png)
+
+- http://blog.athico.com/2012/10/scorecards-and-pmml41-support-for.html
+- http://primatek.ca/2010/08/16/a-quick-introduction-to-scorecards/
