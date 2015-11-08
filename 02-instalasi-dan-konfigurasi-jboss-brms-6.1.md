@@ -54,7 +54,9 @@ Pastikan Java 1.8 dan Maven sudah terinstal di komputer anda.
    
    Di Windows: `EAP_HOME\bin\standalone.bat`
 
-5. Impor BRMS Repository
+# Test instalasi dengan menjalankan project quickstart
+
+1. Impor BRMS Repository yang berisi sample projects 
   
    - Pastikan JBoss BRMS sudah dijalankan dengan perintah diatas. Lalu buka web browser dan akses [http://localhost:8080/business-central](http://localhost:8080/business-central)
    - Log in dengan credentials berikut:
@@ -79,3 +81,41 @@ Pastikan Java 1.8 dan Maven sudah terinstal di komputer anda.
       ```
       
    - Klik tombol *Clone*. Jika berhasil meng-clone repository anda akan mendapatkan pesan "The repository is cloned successfully".
+   
+   > Anda dapat juga meng-clone repository dengan menggunakan perintah `git` ke direktori lokal dahulu lalu baru meng-clone ke BRMS
+   > 
+   > ```
+   > cd /path/to/
+   > git clone jboss-brms-repository
+   > ```
+
+2. Pilih menu *Authoring* -> *Project Authoring*
+3. Navigasikan Project Explorer ke path berikut:
+
+   ```
+   Organizational Unit:     example
+   Repository Name:         jboss-brms-repository
+   BRMS Kmodule (Project):  helloworld-brms-kmodule
+   ```
+   
+   ![image](https://cloud.githubusercontent.com/assets/3068071/11017536/ac5bcb36-85d4-11e5-8218-cb7b64a7c413.png)
+   
+   Untuk melihat aset (artifacts) dari project klik tanda `[+]` disebelah kanan path `example/jboss-brms-repository/helloworld-brms-kmodule` untuk melihat struktur direktori dari project tersebut, lalu ekspansikan directory explorer tersebut sampai ke direktori `<default>/org/jboss/quickstart/brms`. Hasilnya aset akan muncul di Project Explorer yaitu beberapa Data Object, Enumeration Definitions dan Guided Rules.
+
+
+4. Klik tombol *Project Editor* di Project Explorer, kemudian di window sebelah kanan klik *Build* -> *Build & Deploy*
+
+   ![image](https://cloud.githubusercontent.com/assets/3068071/11017539/c3e01d66-85d4-11e5-878e-6aaf882ba9d2.png)
+   
+   Anda akan mendapatkan pesan: "Also save possible changes to project?". Klik Yes.
+   Kemudian akan diminta memasukan komentar. Isi komentar kemduaian klik tombol Save.
+   
+   Proses ini akan membuat artifact `helloworld-brms-kmodule-1.0.0.jar`ke BRMS Maven repository. 
+   Anda bisa verifikasi dengan melihat di menu *Authoring* –> *Artifact Repository*
+   
+   ![image](https://cloud.githubusercontent.com/assets/3068071/11023189/6b6886e8-86a4-11e5-845f-bc6ceaeb3e45.png)
+   
+   Proses tersebut juga akan men-deploy artifact tersebut ke BRMS Runtime Engine, anda bisa verifikasi dengan melihat di halmanan Deployment, klik menu *Deploy* -> *Process Deploymnet*. Anda akan lihat sebuah deployment dengan nama `org.jboss.quickstarts.brms:helloworld-brms-kmodule:1.0.0` ada di daftar.
+   
+   ![image](https://cloud.githubusercontent.com/assets/3068071/11023197/b4b0020e-86a4-11e5-9c28-a6b16456789a.png)
+   
