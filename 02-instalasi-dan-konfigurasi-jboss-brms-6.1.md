@@ -174,59 +174,35 @@ Pastikan Java 1.8 dan Maven sudah terinstal di komputer anda.
    Lakukan kembali perintah `mvn clean test -Penable-test,brms`, jika sukses anda akan mendapatkan output seperti berikut:
    
    ```
-   [INFO]
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ brms-helloworld-brms ---
-[INFO] Deleting /Users/ejlp12/playground/jboss-brms-quickstarts/helloworld-brms/target
-[INFO]
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ brms-helloworld-brms ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/ejlp12/playground/jboss-brms-quickstarts/helloworld-brms/src/main/resources
-[INFO]
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ brms-helloworld-brms ---
-[INFO] No sources to compile
-[INFO]
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ brms-helloworld-brms ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /Users/ejlp12/playground/jboss-brms-quickstarts/helloworld-brms/src/test/resources
-[INFO]
-[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ brms-helloworld-brms ---
-[INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 1 source file to /Users/ejlp12/playground/jboss-brms-quickstarts/helloworld-brms/target/test-classes
-[INFO]
-[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ brms-helloworld-brms ---
-[INFO] Surefire report directory: /Users/ejlp12/playground/jboss-brms-quickstarts/helloworld-brms/target/surefire-reports
+  -------------------------------------------------------
+	 T E S T S
+	-------------------------------------------------------
+	Running org.jboss.quickstarts.brms.HelloWorldBRMSTest
+	08:13:23.882 [main] INFO  o.d.c.k.b.impl.ClasspathKieProject - Found kmodule: jar:file:/Users/ejlp12/.m2/repository/org/jboss/quickstarts/brms/helloworld-brms-kmodule/1.0.0/helloworld-brms-kmodule-1.0.0.jar!/META-INF/kmodule.xml
+	08:13:23.896 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - KieModule URL type=jar url=/Users/ejlp12/.m2/repository/org/jboss/quickstarts/brms/helloworld-brms-kmodule/1.0.0/helloworld-brms-kmodule-1.0.0.jar
+	08:13:24.528 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - Found and used pom.properties META-INF/maven/org.jboss.quickstarts.brms/helloworld-brms-kmodule/pom.properties
+	08:13:24.532 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - Discovered classpath module org.jboss.quickstarts.brms:helloworld-brms-kmodule:1.0.0
+	08:13:24.536 [main] INFO  o.d.c.k.b.impl.KieRepositoryImpl - KieModule was added: ZipKieModule[releaseId=org.jboss.quickstarts.brms:helloworld-brms-kmodule:1.0.0,file=/Users/ejlp12/.m2/repository/org/jboss/quickstarts/brms/helloworld-brms-kmodule/1.0.0/helloworld-brms-kmodule-1.0.0.jar]
+	08:13:25.304 [main] DEBUG o.drools.core.impl.KnowledgeBaseImpl - Starting Engine in PHREAK mode
+	** Testing VIP customer **
+	VIP discount applied
+	Sale approved
+	** Testing regular customer **
+	Sale approved
+	** Testing BAD customer **
+	Bad customer. Sale denied
+	Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.998 sec
 
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
-Running org.jboss.quickstarts.brms.HelloWorldBRMSTest
-08:13:23.882 [main] INFO  o.d.c.k.b.impl.ClasspathKieProject - Found kmodule: jar:file:/Users/ejlp12/.m2/repository/org/jboss/quickstarts/brms/helloworld-brms-kmodule/1.0.0/helloworld-brms-kmodule-1.0.0.jar!/META-INF/kmodule.xml
-08:13:23.896 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - KieModule URL type=jar url=/Users/ejlp12/.m2/repository/org/jboss/quickstarts/brms/helloworld-brms-kmodule/1.0.0/helloworld-brms-kmodule-1.0.0.jar
-08:13:24.528 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - Found and used pom.properties META-INF/maven/org.jboss.quickstarts.brms/helloworld-brms-kmodule/pom.properties
-08:13:24.532 [main] DEBUG o.d.c.k.b.impl.ClasspathKieProject - Discovered classpath module org.jboss.quickstarts.brms:helloworld-brms-kmodule:1.0.0
-08:13:24.536 [main] INFO  o.d.c.k.b.impl.KieRepositoryImpl - KieModule was added: ZipKieModule[releaseId=org.jboss.quickstarts.brms:helloworld-brms-kmodule:1.0.0,file=/Users/ejlp12/.m2/repository/org/jboss/quickstarts/brms/helloworld-brms-kmodule/1.0.0/helloworld-brms-kmodule-1.0.0.jar]
-08:13:25.304 [main] DEBUG o.drools.core.impl.KnowledgeBaseImpl - Starting Engine in PHREAK mode
-** Testing VIP customer **
-VIP discount applied
-Sale approved
-** Testing regular customer **
-Sale approved
-** Testing BAD customer **
-Bad customer. Sale denied
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.998 sec
+	Results :
+	Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
 
-Results :
-
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
-
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time: 36.982 s
-[INFO] Finished at: 2015-11-09T08:13:25+07:00
-[INFO] Final Memory: 24M/155M
-[INFO] ------------------------------------------------------------------------
+	[INFO] ------------------------------------------------------------------------
+	[INFO] BUILD SUCCESS
+	[INFO] ------------------------------------------------------------------------
+	[INFO] Total time: 36.982 s
+	[INFO] Finished at: 2015-11-09T08:13:25+07:00
+	[INFO] Final Memory: 24M/155M
+	[INFO] ------------------------------------------------------------------------
    ```
    
    
