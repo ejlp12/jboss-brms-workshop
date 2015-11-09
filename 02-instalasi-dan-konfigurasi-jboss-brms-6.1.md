@@ -230,7 +230,9 @@ Klik tab "Source" di window sebelah kanan, anda akan melihat source dari rule se
 
 ![image](https://cloud.githubusercontent.com/assets/3068071/11025219/23a58834-86cb-11e5-959a-099f820b4e45.png)
 
+![image](https://cloud.githubusercontent.com/assets/3068071/11025811/ec35b380-86d2-11e5-89f9-d63e05c900d0.png)
 
+![image](https://cloud.githubusercontent.com/assets/3068071/11025806/d873a118-86d2-11e5-9fa6-a294ea489a2f.png)
 
 
    
