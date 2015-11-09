@@ -205,4 +205,32 @@ Pastikan Java 1.8 dan Maven sudah terinstal di komputer anda.
 	[INFO] ------------------------------------------------------------------------
    ```
    
+## Apa yang sudah anda lakukan sejauh ini?
+   
+Anda telah men-clone sebuah contoh BRMS proyek yang berisi beberapa rule file (.rdrl) dan Java classes ke GIT respository dari JBoss BRMS server. Kemudian anda mem-build proyek tersebut menggunakan Business Console web, sehingga didapatkan sebuah `KJAR application` dalam bentuk file `jar` yang siap digunakan atau dieksesusi sebagai rule.
+   
+Langkah terakhir adalah, anda menggunakan `jar` tersebut untuk mengeksekusi rule (test). Rule dieksekusi saat anda menjalankan `mvn clean test` di JVM lokal, bukan di JBoss BRMS Server.
+
+## Kode sumber untuk test
+
+Buka file `HelloWorldBRMSTest.java` di direktori `helloworld-brms/src/test/java/org/jboss/quickstarts/brms/` dan pelajari kode sumber tersebut. Atau jika anda terhubung ke Internet klik link berikut:
+
+https://github.com/jboss-developer/jboss-brms-quickstarts/blob/6.2.x/helloworld-brms/src/test/java/org/jboss/quickstarts/brms/HelloWorldBRMSTest.java
+
+
+## Kode sumber dari rule
+
+Buka kembali Business Central, dan navigasikan ke Project Explorer kemudian ekspansikan daftar "GUIDED RULES" kemudian klik masing-masing rule file yaitu: 
+
+- BadCustomerSale
+- RegularSale
+- VipDiscount
+
+Klik tab "Source" di window sebelah kanan, anda akan melihat source dari rule seperti ini:
+
+![image](https://cloud.githubusercontent.com/assets/3068071/11025219/23a58834-86cb-11e5-959a-099f820b4e45.png)
+
+
+
+
    
