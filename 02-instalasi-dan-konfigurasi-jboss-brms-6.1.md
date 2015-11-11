@@ -211,12 +211,6 @@ Anda telah men-clone sebuah contoh BRMS proyek yang berisi beberapa rule file (.
    
 Langkah terakhir adalah, anda menggunakan `jar` tersebut untuk mengeksekusi rule (test). Rule dieksekusi saat anda menjalankan `mvn clean test` di JVM lokal, bukan di JBoss BRMS Server.
 
-## Kode sumber untuk test
-
-Buka file `HelloWorldBRMSTest.java` di direktori `helloworld-brms/src/test/java/org/jboss/quickstarts/brms/` dan pelajari kode sumber tersebut. Atau jika anda terhubung ke Internet klik link berikut:
-
-https://github.com/jboss-developer/jboss-brms-quickstarts/blob/6.2.x/helloworld-brms/src/test/java/org/jboss/quickstarts/brms/HelloWorldBRMSTest.java
-
 
 ## Kode sumber dari rule
 
@@ -234,5 +228,13 @@ Klik tab "Source" di window sebelah kanan, anda akan melihat source dari rule se
 
 ![image](https://cloud.githubusercontent.com/assets/3068071/11025806/d873a118-86d2-11e5-9fa6-a294ea489a2f.png)
 
+## Kode sumber untuk test
 
+Buka file `HelloWorldBRMSTest.java` di direktori `helloworld-brms/src/test/java/org/jboss/quickstarts/brms/` dan pelajari kode sumber tersebut. Atau jika anda terhubung ke Internet klik link berikut:
+
+https://github.com/jboss-developer/jboss-brms-quickstarts/blob/6.2.x/helloworld-brms/src/test/java/org/jboss/quickstarts/brms/HelloWorldBRMSTest.java
+
+## Selanjutnya apa?
+
+Bagaimana kita membuat rule? dan menggunakannya?
    
