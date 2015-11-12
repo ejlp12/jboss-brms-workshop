@@ -20,6 +20,10 @@ Untuk membuat rule kita bisa gunakan dua alat berikut:
 
 ## Membuat project
 
+## Membuat data object
+
+Data object adalah model data (business data) yang akan terlibat dalam eksekusi rule. Data object sebenarnya adalah POJO (Plain Old Java Object), sebuah class Java sederhana, dengan sedikit annotation. Untuk seorang programmer membuat class Java sederhana bukanlah masalah tetapi untuk orang binis hal tersebut jadi masalah. Di Business Central, pengguna (orang bisnis) dapat membuat data object dengan mudah tanpa perlu coding.
+
 ## Membuat rule
 
 ## Men-deploy project
