@@ -11,8 +11,24 @@ Pada latihan ini kita akan mencoba membuat business rule dari nol. Sebelumnya sa
 
 Untuk membuat rule kita bisa gunakan dua alat berikut:
 
-* web user interface yaitu business-central yang bisa diakses di [http://localhost:8080/business-central](http://localhost:8080/business-central)
+* Web user interface yaitu __business-central__ yang bisa diakses di [http://localhost:8080/business-central](http://localhost:8080/business-central)
 * JBoss Developer Studio (JBDS) yaitu IDE berbasis Eclipse.
+
+# Membuat rule menggunakan Business Central
+
+## Membuat organization & repository
+
+## Membuat project
+
+## Membuat rule
+
+## Men-deploy project
+
+### Mendaftarkan (register) rule server
+
+### Membuat rule container
+
+## Mengakses rule engine (Ekseksusi rule)
 
 
 
