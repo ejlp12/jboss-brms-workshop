@@ -4,9 +4,9 @@ JBoss BRMS atau BPM Suite memiliki fitur scorecard mulai [versi 6.0 (mulai Drool
 
 Scorecard adalah alat untuk Risk Management yang digunakan untuk menentukan resiko suatu kasus dengan cara penilaian atau pembobotan dari berbagai atribut dari object yang terlibat dari kasus tersebut. Sebagai contoh yang umum adalah apa yang dilakukan Bank dan mungkin institusi finansial lainnya dalam mengkalkulasi resiko suatu produk yang ditawarkan kepada nasabah. Contoh riilnya adalah penawaran pinjaman (hutang), ketika seorang nasabah ingin mengambil pinjaman di Bank, maka Bank akan melakukan penilaian (scoring) dengan cara melihat profil nasabah tersebut, mulai dari usia, penghasilan, sejarah transaksi dengan bank dan lain-lain, dari scoring tersebut Bank bisa menentukan apakah nasabah tersebut layak diberi pinjaman atau tidak, atau untuk menentukan seberapa besar pinjaman yang layak diberikan untuk nasabah tersebut, atau untuk menentukan seberapa besar bunga yang bisa dibebankan pada nasabah tersebut.
 
-> A scorecard is a graphical representation of a formula used to calculate an overall score. 
+> _A scorecard is a graphical representation of a formula used to calculate an overall score. 
 > A scorecard can be used to predict the likelihood or probability of a certain outcome. 
-> An additive scorecard calculates an overall score by adding all partial scores assigned to individual rule conditions.
+> An additive scorecard calculates an overall score by adding all partial scores assigned to individual rule conditions._
 
 [Video contoh pembuatan scorecard di JBoss BRMS/BPMS](https://www.youtube.com/watch?v=xFLlgtBMTDY) dengan menggunakan **Guided Score Card**
 
